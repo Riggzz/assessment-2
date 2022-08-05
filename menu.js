@@ -31,7 +31,15 @@
 */
 
 //CODE HERE
+const pizza = {
+    name: 'the muncher',
+    price: 10,
+    category: '',
+    popularity: 8,
+    rating: 9,
+    tags: ['pepperoni'],
 
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +61,7 @@
 */
 
 //CODE HERE
-
+pizza.tags['pepperoni, cheese, tomato sauce']
 
 /*
     Third, destructure the price off of the
@@ -63,7 +71,8 @@
 */
 
 //CODE HERE
-
+let {price} = pizza
+let pizzaPrice = pizza.price
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +82,8 @@
 */
 
 //CODE HERE
-
+//let {category} = pizza
+console.log(pizza.category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +98,72 @@
 */
 
 //CODE HERE
+let foodArr = []
+
+const pepperoni = {
+    name: 'the pepper-oni',
+    price: 10,
+    category: 'meat',
+    popularity: 8,
+    rating: 9,
+    tags: ['pepperoni','cheese', 'tomato sauce'],
+}
+
+const mushroom = {
+    name: 'the trash',
+    price: 11,
+    category: 'vegetarian',
+    popularity: 5,
+    rating: 7,
+    tags: ['mushroom', 'asparagus', 'cheese'],
+}
+
+const hawaiian = {
+    name: 'the muncher',
+    price: 10,
+    category: 'tropical',
+    popularity: 7,
+    rating: 9,
+    tags: ['ham', 'pineapple', 'cheese', 'tomato sauce'],
+}
+
+const barbecue = {
+    name: 'the backyard special',
+    price: 12,
+    category: 'meat lovers',
+    popularity: 10,
+    rating: 9,
+    tags: ['bbq chicken', 'barbecue sauce', 'cheese'],
+}
+
+const pesto = {
+    name: 'the italian',
+    price: 10,
+    category: 'international',
+    popularity: 8,
+    rating: 10,
+    tags: ['grilled chicken', 'sun dried tomatoes', 'pesto sauce'],
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
