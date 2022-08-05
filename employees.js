@@ -66,7 +66,9 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
+let empTwo = empOne
+empTwo.name = 'Nick'
+console.log(empTwo)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -91,10 +93,22 @@ empOne.getSchedule()
     The function should push the name into 
     the employees array. 
 */
-
+let employees = []
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees){
+        super(name, shifts)
 
-
+        this.employees = employees;
+    } 
+    getEmployees() {
+    console.log(`${this.name} manages ${this.employees}`)
+}
+addEmployee(emp){
+    employees.push(emp)
+    console.log(employees) 
+}
+}
 
 /*
     Create a new instance of your class.
@@ -108,6 +122,8 @@ empOne.getSchedule()
 */
 
 //CODE HERE
+let manager = new Manager('Benson', 'weekdays', 'Mordecai and Rigby')
+
 
 
 /*
@@ -116,7 +132,7 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-
+manager.getEmployees()
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -124,7 +140,7 @@ empOne.getSchedule()
 */
 
 //CODE HERE 
-
+manager.addEmployee('Skips')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -132,3 +148,4 @@ empOne.getSchedule()
 */
 
 //CODE HERE
+manager.getEmployees()
