@@ -66,9 +66,9 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-let empTwo = (...empOne)
-empTwo.name = 'Nick'
+let empTwo = {...empOne, name: 'Nick'}
 console.log(empTwo)
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -93,7 +93,7 @@ console.log(empTwo)
     The function should push the name into 
     the employees array. 
 */
-let employees = []
+
 //CODE HERE
 class Manager extends Employee {
     constructor(name, shifts, employees){
@@ -105,8 +105,7 @@ class Manager extends Employee {
     console.log(`${this.name} manages ${this.employees}`)
 }
 addEmployee(emp){
-    this.employees.push(emp)
-    console.log(employees) 
+    this.employees.push(emp) 
 }
 }
 

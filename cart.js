@@ -35,7 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((acc, cur) => acc + cur.price, 0)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,8 +55,10 @@ const cart = [
 */
 
 //CODE HERE
-
-
+function calcFinalPrice(cartTotal, couponValue, tax){
+    return cartTotal + (cartTotal * tax) - couponValue
+}
+console.log(calcFinalPrice(10,2,1))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,7 +82,12 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+    Properties:
+    firstName - type string - customer needs a name that can be stored
+    lastName - type string - customer needs a last name that can be stored
+    streetAddress - type string - customer needs an address to bill to
+    zipCode - type numner - I chose this because i need to know the customers region using numbers
+    wantsMarketingEmails - type boolean - I chose this because i want to send my customers marketing emails
 */
 
 /*
@@ -88,3 +96,10 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    firstName: 'Ethan',
+    lastName: 'Blanco',
+    streetAddress: '1950 123 street',
+    zipCode: 54645,
+    wantsMarketingEmails: false,
+}
