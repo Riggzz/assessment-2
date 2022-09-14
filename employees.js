@@ -121,7 +121,7 @@ addEmployee(emp){
 */
 
 //CODE HERE
-let manager = new Manager['Benson', 'weekdays', 'Mordecai and Rigby']
+let manager = new Manager('Benson', 'weekdays', ['Mordecai', 'Rigby'])
 
 
 

@@ -61,7 +61,7 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-pizza.tags['pepperoni, cheese, tomato sauce']
+pizza.tags[3]
 
 /*
     Third, destructure the price off of the
@@ -72,7 +72,7 @@ pizza.tags['pepperoni, cheese, tomato sauce']
 
 //CODE HERE
 let {price} = pizza
-let pizzaPrice = pizza.price
+
 
 /*
     Fourth, and last, destructure the category
@@ -82,7 +82,7 @@ let pizzaPrice = pizza.price
 */
 
 //CODE HERE
-//let {category} = pizza
+let {category} = pizza
 console.log(pizza.category)
 
 //////////////////PROBLEM 3////////////////////
@@ -100,43 +100,45 @@ console.log(pizza.category)
 //CODE HERE
 let foodArr = []
 
-const pepperoni = {
+let pizzas = [
+    
+pepperoni = {
     name: 'the pepper-oni',
     price: 10,
     category: 'meat',
     popularity: 8,
     rating: 9,
     tags: ['pepperoni','cheese', 'tomato sauce'],
-}
+},
 
-const mushroom = {
+mushroom = {
     name: 'the trash',
     price: 11,
     category: 'vegetarian',
     popularity: 5,
     rating: 7,
     tags: ['mushroom', 'asparagus', 'cheese'],
-}
+},
 
-const hawaiian = {
+hawaiian = {
     name: 'the muncher',
     price: 10,
     category: 'tropical',
     popularity: 7,
     rating: 9,
     tags: ['ham', 'pineapple', 'cheese', 'tomato sauce'],
-}
+},
 
-const barbecue = {
+barbecue = {
     name: 'the backyard special',
     price: 12,
     category: 'meat lovers',
     popularity: 10,
     rating: 9,
     tags: ['bbq chicken', 'barbecue sauce', 'cheese'],
-}
+},
 
-const pesto = {
+pesto = {
     name: 'the italian',
     price: 10,
     category: 'international',
@@ -144,7 +146,7 @@ const pesto = {
     rating: 10,
     tags: ['grilled chicken', 'sun dried tomatoes', 'pesto sauce'],
 }
-
+]
 
 
 
